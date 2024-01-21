@@ -1,160 +1,143 @@
+// Header.js
 
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import FeedIcon from '@mui/icons-material/Feed';
-import { useRouter } from 'next/router'
-import { useSelector } from 'react-redux';
+import { Card, CardMedia, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
+import Head from "next/head";
+import Image from "next/image";
 
-const pages = ['Bookmark','Blog'];
-const settings = ['SignUp', 'Logout'];
-
-function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const router = useRouter()
-
-  const {firstName, lastName,email}=useSelector(state=>state.quiz.data)
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
+const Header = () => {
+  
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <FeedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-            onClick={()=>router.push("/")}
-          >
-            QUIZ-APP
-          </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" >{page}</Typography >
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-         
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+     
+      <>    
+      
+      
+      <Head>
+      <link rel="shortcut icon" href="/logo.jpeg" />
+    </Head>
+      <Box className="sticky" sx={{ backgroundColor: "#362b59", color: "white", zIndex:1000 }}>
+        <Grid container justifyContent="center" alignItems="center">
+          {/* logo grid */}
+          <Grid item xs={4} sx={{ padding:1, paddingLeft:5,height:200}}>
+            {/* <Card>
+              <CardMedia
+             component="img"
+              height="130"
+              
+               image src="/logo.jpeg" 
+               alt="logo" 
+              />
+            </Card> */}
+            {/* <Card>
+              <CardMedia
+                component="img"
+                height="150"
+                width="130"
+                image=" /logo.jpeg" // Replace with an actual image URL
+                alt="About Image"
+              />
+
+            </Card> */}
+            <Image  src="/logo.jpeg " alt=""logo height={190} width={190}/>
             
-              <Button
-                
-                // onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                onClick={()=>router.push("/signup")}
-              >
-                SignUp
-              </Button>
-         
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="R"  />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
+          </Grid>
+          <Grid item xs={8}>
+            {/* link grid */}
+            <Grid
+              container
+              direction="row"
+              justifyContent="space-evenly"
+              alignItems="center"
             >
-              
-                <MenuItem  onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{firstName} {lastName}</Typography>
-                </MenuItem>
-                <MenuItem  onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{email}</Typography>
-                </MenuItem>
-                <MenuItem  onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">Logout</Typography>
-                </MenuItem>
-              
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+              <Grid item sx={{fontSize:30}}>
+                <Typography variant="h5"> Home Page</Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="h5" > About us</Typography>
+              </Grid>
+              <Grid item>
+                <Typography  variant="h5">Blog</Typography>
+              </Grid>
+              <Grid item>
+                <Typography  variant="h5"> Help us</Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="h5" > Contact us</Typography>
+              </Grid>
+             
+              <Grid item>
+                <Typography variant="h5"> SignUp</Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+
+         
+        </Grid>
+      </Box>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      </>
+
+
+
+//     <header className="header">
+//       <div class="navbar">
+//         <div class="nav-logo">
+//           <div class="logo"></div>
+//         </div>
+//         <div>
+//         <nav className="navbar-links">
+//         <ul>
+//           <li><a href="#">About Us</a></li>
+//           <li><a href="#">Home Page</a></li>
+//           <li><a href="#">Blog</a></li>
+//           <li><a href="#">Contact Us</a></li>
+//           <li><a href="#"> Help Us</a></li>
+//         </ul>
+//       </nav>
+
+
+//         </div>
+//       </div>
+
+//       {/* <div className="logo">
+//         <a href="../">
+//           <Image
+//             src="/logo.jpeg"
+//             alt="Logo"
+//             width="110"
+//             height="110"
+//           />
+//         </a>
+//       </div> */}
+//       {/* <div className="navbar-toggle">
+//         <input type="checkbox" id="toggle" />
+//         <label htmlFor="toggle">
+//           <span></span>
+//           <span></span>
+//           <span></span>
+//         </label>
+//       </div>
+//       <nav className="navbar-links">
+//         <ul>
+//           <li><a href="#">About Us</a></li>
+//           <li><a href="#">Home Page</a></li>
+//           <li><a href="#">Blog</a></li>
+//           <li><a href="#">Contact Us</a></li>
+//           <li><a href="#"> Help Us</a></li>
+//         </ul>
+//       </nav>
+//  */}
+//     </header> 
   );
-}
+};
+
 export default Header;

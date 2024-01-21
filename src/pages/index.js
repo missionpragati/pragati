@@ -1,160 +1,345 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import Head from 'next/head';
-import { Box, Button, Grid } from '@mui/material';
-import { quizData, shuffle } from "../static"
-import Image from 'next/image';
-import ProgressBar from '@/component/progressbar';
-import ListScore from '@/component/listScore';
+import React, { useEffect, useState } from "react";
+
+import {
+  Container,
+  Typography,
+  Grid,
+  Button,
+  Card,
+  CardMedia,
+  CardContent,
+  Box,
+  Image,
+} from "@mui/material";
 
 export default function Home() {
-  const [page, setPage] = useState(0)
-  const [data, setData] = useState(null);
-  const dispatch = useDispatch()
-  const [color, setColor] = useState({ first: "", second: "" })
-  const [score, setScore] = useState(0)
-  const [ans, setAns] = useState("");
-  const [active, setActive] = useState(false);
-  const [isActive, setIsActive] = useState(true);
-  const [time, setTime] = useState(15);
-
-
-
-  useEffect(() => {
-    let newData = shuffle(quizData[page].images)
-    setData({ ...quizData[page], images: newData })
-  }, [page])
-
-  React.useEffect(() => {
-    let interval = null;
-
-    if (isActive ) {
-      interval = setInterval(() => {
-
-        setCounter(time)
-      }, 1000);
-    } else {
-      clearInterval(interval);
-    }
-    return () => {
-      clearInterval(interval);
-    };
-  }, [isActive, time]);
-
-  const setCounter = () => {
-    if (time > 0 && isActive) {
-      setTime((time) => time - 1);
-    } else {
-      setIsActive(false),
-
-      setActive(true)
-    }
-  }
-
-
-  const onClickImageHandler = (val) => {
-
-    if (data.images[val].length > 11) {
-      setAns("You choosen correct answer.")
-      setScore((score) => score + 1)
-      if (val == 0) {
-        setColor({ first: "#00892d", second: "#ad00b3" })
-      }
-      if (val == 1) {
-        setColor({ first: "#ad00b3", second: "#00892d" })
-      }
-    }
-    if (data.images[val].length < 12) {
-      setAns("You have chossen wrong answer.")
-      if (val == 0) {
-        setColor({ first: "#ad00b3", second: "#00892d" })
-
-      }
-      if (val == 1) {
-        setColor({ first: "#00892d", second: "#ad00b3" })
-      }
-    }
-    if (page < 9) {
-      setActive(true)
-    }
-
-
-
-  }
-
-  const onNextHandler = () => {
-    if (active) {
-      if (page < 9) {
-        setPage(page => page + 1)
-      }
-      setAns("")
-      setActive(false)
-      setColor({ first: "", second: "" })
-      setIsActive(true);
-      setTime(15)
-    } else if (page == 9) {
-      let sdata = sessionStorage.getItem("score") ? JSON.parse(sessionStorage.getItem("score")) : []
-      var currentTime = new Date()
-      sessionStorage.setItem("score", JSON.stringify([...sdata, {score:score,time:currentTime}]));
-      setAns("")
-      setActive(true)
-      setIsActive(false);
-    } else {
-      setAns("Please Choose any Image");
-    }
-
-  }
-
-  const onRefreshHandler = () => {
-    setActive(false)
-    setPage(0)
-    setAns("")
-    setColor({ first: "", second: "" })
-    setScore(0)
-    setIsActive(true);
-      setTime(15)
-  }
-
   return (
-    <main >
-      <Head>
-        <title>Quiz </title>
-      </Head>
-      <Box sx={{ margin: 1, fontWeight: "bold", textAlign: "center", fontSize: 28, color: "#1976d2" }}>Quiz: {page + 1} / 10</Box>
-      <Box sx={{ margin: 1, fontWeight: "bold", textAlign: "center", fontSize: 28, color: "#1976d2" }}>Score: {score}</Box>
+    <Container maxWidth="">
+      {/* Section 1: About */}
 
-      {page == 9 && active ? (null) : (<Box sx={{ height: 20, margin: 1, marginBottom: 5, fontWeight: "bold", textAlign: "center", fontSize: 28, color: ans.length > 28 ? "red" : "green" }}>{ans}</Box>)}
+      <Box
+        className="mainbg"
+        sx={{
+          height: 800,
+          color: "#0b1460",
+          backgroundColor: "#3b4580",
+          paddingTop: 2,
+          marginTop: 5,
+          width: 1450,
+          borderRadius: 7,
+           
+        }}
+      >
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          // spacing={1}
+          sx={{ marginTop: 5, borderRadius: "10" }}
+        >
+          <Grid
+            item
+            xs={4}
+            sx={{
+              backgroundColor: "#91bfbc",
+              color: "white",
+              height: 680,
+              width: 100,
+            }}
+          >
+            <h1>
+              <h1 style={{ fontSize: 70 }}>
+                Empowering <span>Young Minds </span>
+                <br></br>unleashing Potential <br></br>Skills for a Bright
+                Future.
+              </h1>
+            </h1>
+          </Grid>
 
-
-
-
-      <Grid container direction="column" justifyContent="center" alignItems="center" spacing={4}>
-        <Grid item xs={10} sx={{ width: "60%" , color:"red"}}>Time Left : {time}</Grid>
-        <Grid item>
-          {page == 9 && active ? (<Box><h3>Your scored : {score} out of 10</h3></Box>) : (<Grid container direction="row" justifyContent="space-around" alignItems="center" spacing={6} >
-            <Grid item xs={12} sm={12} lg={6} xl={6}>
-              <Button disabled={active} onClick={() => onClickImageHandler(0)} sx={{ borderRadius: 6, border: "1px solid blue", backgroundColor: `${color.first}`, padding: 3 }}>
-                <Image src={`/images/${data?.images[0]}`} alt="images" width={500} height={300} />
-              </Button>
-            </Grid>
-            <Grid item xs={12} sm={12} lg={6} xl={6}>
-              <Button disabled={active} onClick={() => onClickImageHandler(1)} sx={{ borderRadius: 6, border: "1px solid blue", backgroundColor: `${color.second}`, padding: 3 }}>
-                <Image src={`/images/${data?.images[1]}`} alt="images" width={500} height={300} />
-              </Button>
-            </Grid>
-          </Grid>)}
-
+          <Grid
+            item
+            xs={8}
+            sx={{ backgroundColor: "", height: 680, borderRadius: "5px" }}
+          >
+            <Card>
+              <CardMedia
+                component="img"
+                height="680"
+                width="600"
+                image="/image1.jpeg "
+                // Replace with an actual image URL
+                alt="About Image"
+              />
+            </Card>
+          </Grid>
         </Grid>
-        <Grid item>{page == 9 && active ? (<Button variant="contained" onClick={onRefreshHandler}>Refresh</Button>) : (<Button variant="contained" onClick={onNextHandler}>Next</Button>)}</Grid>
-        <Grid item xs={12}>{page == 9 && active ? <ListScore /> : null}</Grid>
-      </Grid>
+      </Box>
 
-    </main>
-  )
+      <Box
+        sx={{
+          height: 900,
+          color: "#0b1460",
+          backgroundColor: "#91bfbc",
+          paddingTop: 2,
+          marginTop: 5,
+          width: 1450,
+          borderRadius: 1,
+        }}
+      >
+        <Typography variant="h4" align="center" gutterBottom>
+          {" "}
+          <h2 style={{ fontSize: 40, color: "white", align: "center" }}>
+            {" "}
+            PRAGATI MISSION
+          </h2>{" "}
+        </Typography>
+
+        <section
+          style={{
+            padding: "10px ",
+            backgroundColor: "#3b4580",
+            marginTop: "",
+            color: "white",
+            fontSize: 50,
+          }}
+        >
+          <Typography variant="h4" align="center" gutterBottom>
+            <span style={{ fontSize: 50 }}>
+              {" "}
+              Help us create a better world for children around !{" "}
+            </span>
+          </Typography>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <Grid item xs={6}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="600"
+                  width="600"
+                  image="/education.jpeg" // Replace with an actual image URL
+                  alt="About Image"
+                  spacing="8"
+                />
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    Our Mission : Child dream
+                  </Typography>
+                  <Typography variant="body2" component="p"></Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="600"
+                  width="600"
+                  image="/classmate.jpeg " // Replace with an actual image URL
+                  alt="About Image"
+                />
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    Our Mission : Child education
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    <h3></h3>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            {/* Add more cards or content */}
+          </Grid>
+        </section>
+      </Box>
+
+      {/* section:3 multilple picture */}
+
+      <Box>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={4}
+         
+          borderRadius={15}
+        >
+          <Grid item xs={4.5}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="350"
+                width="300"
+                image="/girls.jpeg" // Replace with an actual image URL
+                alt="About Image"
+                spacing="8"
+              />
+             
+            </Card>
+          </Grid>
+
+          <Grid item xs={3.5} sx={{ marginTop: 13, borderRadius: 10 }}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="300"
+                width="300"
+                image="/chess.jpeg" // Replace with an actual image URL
+                alt="About Image"
+              />
+
+            </Card>
+          </Grid>
+
+          <Grid item xs={3.5} sx={{ marginTop: 13 }}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="300"
+                width="300"
+                image="/book.jpeg" // Replace with an actual image URL
+                alt="About Image"
+              />
+
+            </Card>
+          </Grid>
+
+         
+        </Grid>
+      </Box>
+
+
+      <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={4}
+          marginTop={0}
+          borderRadius={15}
+          sx={{ marginBottom: 0 }}
+        >
+          <Grid item xs={4.5}   sx={{ marginBottom: 0 }}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="350"
+                width="300"
+                image="/techer.jpeg" // Replace with an actual image URL
+                alt="About Image"
+                spacing="8"
+                // borderRadius={15}
+              />
+             
+            </Card>
+          </Grid>
+
+          <Grid item xs={3.5} sx={{ marginBottom: 10 }}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="300"
+                width="300"
+                image="/majrityjpeg " // Replace with an actual image URL
+                alt="About Image"
+              />
+
+            </Card>
+          </Grid>
+
+          <Grid item xs={3.5} sx={{ marginBottom: 10 }}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="300"
+                width="300"
+                image="/group.jpeg" // Replace with an actual image URL
+                alt="About Image"
+              />
+
+            </Card>
+          </Grid>
+
+         
+        </Grid>
+
+
+
+
+
+
+
+
+
+      {/* Section 2: Programs */}
+      <section style={{ padding: "50px 0", backgroundColor: "#ffffff" }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Our Programs
+        </Typography>
+
+        <Grid container spacing={4} justifyContent="center">
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image="/image2.jpeg" // Replace with an actual image URL
+                alt="Programs Image"
+              />
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Education Initiatives
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Details about various education programs, initiatives, or
+                  courses offered by the NGO.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          {/* Add more cards or content */}
+        </Grid>
+      </section>
+
+      {/* Section 3: Get Involved */}
+      <section style={{ padding: "50px 0", backgroundColor: "#f5f5f5" }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Get Involved
+        </Typography>
+        <Grid container spacing={4} justifyContent="center">
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image="/classmate.jpeg" // Replace with an actual image URL
+                alt="Get Involved Image"
+              />
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Volunteer Opportunities
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Information about volunteering opportunities with the NGO.
+                </Typography>
+                <Button variant="contained" color="primary" fullWidth>
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+          {/* Add more cards or content */}
+        </Grid>
+      </section>
+    </Container>
+  );
 }
-
-
-
-
-
-
