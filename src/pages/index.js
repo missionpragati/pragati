@@ -1,345 +1,456 @@
 import React, { useEffect, useState } from "react";
-
-import {
-  Container,
-  Typography,
-  Grid,
-  Button,
-  Card,
-  CardMedia,
-  CardContent,
-  Box,
-  Image,
-} from "@mui/material";
+import logo from "../../public/images1/logo.jpg";
 
 export default function Home() {
   return (
-    <Container maxWidth="">
-      {/* Section 1: About */}
-
-      <Box
-        className="mainbg"
-        sx={{
-          height: 800,
-          color: "#0b1460",
-          backgroundColor: "#3b4580",
-          paddingTop: 2,
-          marginTop: 5,
-          width: 1450,
-          borderRadius: 7,
-           
-        }}
-      >
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          // spacing={1}
-          sx={{ marginTop: 5, borderRadius: "10" }}
-        >
-          <Grid
-            item
-            xs={4}
-            sx={{
-              backgroundColor: "#91bfbc",
-              color: "white",
-              height: 680,
-              width: 100,
-            }}
-          >
-            <h1>
-              <h1 style={{ fontSize: 70 }}>
-                Empowering <span>Young Minds </span>
-                <br></br>unleashing Potential <br></br>Skills for a Bright
-                Future.
-              </h1>
-            </h1>
-          </Grid>
-
-          <Grid
-            item
-            xs={8}
-            sx={{ backgroundColor: "", height: 680, borderRadius: "5px" }}
-          >
-            <Card>
-              <CardMedia
-                component="img"
-                height="680"
-                width="600"
-                image="/image1.jpeg "
-                // Replace with an actual image URL
-                alt="About Image"
-              />
-            </Card>
-          </Grid>
-        </Grid>
-      </Box>
-
-      <Box
-        sx={{
-          height: 900,
-          color: "#0b1460",
-          backgroundColor: "#91bfbc",
-          paddingTop: 2,
-          marginTop: 5,
-          width: 1450,
-          borderRadius: 1,
-        }}
-      >
-        <Typography variant="h4" align="center" gutterBottom>
-          {" "}
-          <h2 style={{ fontSize: 40, color: "white", align: "center" }}>
-            {" "}
-            PRAGATI MISSION
-          </h2>{" "}
-        </Typography>
-
-        <section
+    <>
+      <div id="banner" className="rounded">
+        <div
+          className="slide"
           style={{
-            padding: "10px ",
-            backgroundColor: "#3b4580",
-            marginTop: "",
-            color: "white",
-            fontSize: 50,
+            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
           }}
-        >
-          <Typography variant="h4" align="center" gutterBottom>
-            <span style={{ fontSize: 50 }}>
-              {" "}
-              Help us create a better world for children around !{" "}
-            </span>
-          </Typography>
-          <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            spacing={4}
+        ></div>
+        <div className="wrap">
+          <div className="banner-content">
+            <h1>Non-Profit Education Reimagined</h1>
+            <p>
+              Pragati Mission is to create a nurturing environment where
+              children can thrive emotionally,intellectually,and socially
+              .Shaping the future by investing the comprenshive develpoment of
+              child,empowering them to reach their full potential and contribute
+              meaningfully to the world.
+            </p>
+            <a
+              href="https://www.shantibhavanchildren.org/get-involved/"
+              title="Learn How You Can Help"
+              target=""
+              className="btn ghost"
+              id=""
+            >
+              {/* <span>Learn How You Can Help</span> */}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* <section className="featured impact">
+        <div
+          className="featured-image rounded"
+          style="
+            background-image: url(images/pragati-mission-L1coaching.jpeg);
+          "
+        ></div>
+        <div className="wrap medium">
+          <div className="featured-content rounded tilt">
+            <div
+              className="featured-image-mobile"
+              style="
+                background-image: url(images/pragatimissiongirl-painting.jpeg);
+              "
+            ></div>
+            <div className="tilt-content flex">
+              <div className="impact-numbers">
+                <div className="impact-numbers-timer">
+                  <div className="timer-bar"></div>
+                </div>
+                <div className="impact-numbers-slider">
+                  <div className="slide">
+                    <strong>97%</strong>
+                    <p>Students who graduate from high school</p>
+                  </div>
+                  <div className="slide">
+                    <strong>98%</strong>
+                    <p>Students who complete college/university degrees</p>
+                  </div>
+                  <div className="slide">
+                    <strong>100%</strong>
+                    <p>
+                      Graduates earn more in 5 years than their parents in a
+                      lifetime
+                    </p>
+                  </div>
+                  <div className="slide">
+                    <strong>90%</strong>
+                    <p>Graduates volunteer in their communities</p>
+                  </div>
+                  <div className="slide">
+                    <strong>100% </strong>
+                    <p>
+                      Graduates give back 20-60% of their salaries to their
+                      families and communities
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="featured-text">
+                <h2 className="title5">Impact</h2>
+                <p>
+                  We measure our impact based on where our students are five
+                  years after they finish the Shanti Bhavan program. Our
+                  graduates are authors, computer scientists, engineers,
+                  entrepreneurs, teachers, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className="image-text">
+        <div className="wrap flex">
+          <a
+            href="https://www.shantibhavanchildren.org/netflix/"
+            target="_blank"
+            className="image-text-image tilt"
           >
-            <Grid item xs={6}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="600"
-                  width="600"
-                  image="/education.jpeg" // Replace with an actual image URL
-                  alt="About Image"
-                  spacing="8"
-                />
-                <CardContent>
-                  <Typography variant="h6" gutterBottom>
-                    Our Mission : Child dream
-                  </Typography>
-                  <Typography variant="body2" component="p"></Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            <img
+              src="images/pragati mission playground.jpeg"
+              alt="Little girl studying at desk"
+            />
+          </a>
+          <div className="image-text-content">
+            <span className="meta">NETFLIX DOCUSERIES</span>
+            <h2>Daughters of Destiny</h2>
+            <p>
+              See firsthand the impact Shanti Bhavan makes on the lives of our
+              children. Academy Award-winning director Vanessa Roth chronicles
+              seven years in the lives of five young Shanti Bhavan women.
+            </p>
+            <a
+              href="https://www.shantibhavanchildren.org/netflix/"
+              target="_blank"
+              className="btn"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="https://www.shantibhavanchildren.org/donate/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style="
+                  background-image: url(images/pragatimissiongirl-painting.jpeg);
+                "
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Donate</h2>
+                <p>Mission Pragati</p>
+              </div>
+            </a>
 
-            <Grid item xs={6}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="600"
-                  width="600"
-                  image="/classmate.jpeg " // Replace with an actual image URL
-                  alt="About Image"
-                />
-                <CardContent>
-                  <Typography variant="h6" gutterBottom>
-                    Our Mission : Child education
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    <h3></h3>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            <a
+              href="https://www.shantibhavanchildren.org/volunteer/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style="
+                  background-image: url(images/pragatimission-prayers.jpeg);
+                "
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Volunteer</h2>
+                <p>Experience Pragati Mission for yourself.</p>
+              </div>
+            </a>
 
-            {/* Add more cards or content */}
-          </Grid>
-        </section>
-      </Box>
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style="
+                  background-image: url(images/pragati-mission-girls-in-classNameroom.jpeg);
+                "
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Sponsor</h2>
+                <p>Create a connection with a Pragati Mission.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className="recent-updates">
+        <div className="wrap flex">
+          <div className="blog">
+            <div className="blog-header flex">
+              <h2>
+                <a
+                  href="https://www.shantibhavanchildren.org/blog/"
+                  className="link-arrow"
+                >
+                  From the Blog
+                </a>
+              </h2>
+              <div className="blog-pagination"></div>
+            </div>
+            <div className="blog-slider swiper">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                  <article className="blog-post">
+                    <a href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/">
+                      <img
+                        src="images/pragati mission cheers group.jpeg"
+                        alt=""
+                        className="tilt"
+                      />
+                    </a>
+                    <span className="meta">
+                      <span>January 12, 2024</span> |<span>General</span>
+                    </span>
+                    <h3>
+                      <a href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/">
+                        Monisha’s Biryani Connection
+                      </a>
+                    </h3>
+                    <a
+                      href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/"
+                      className="more"
+                      aria-label="Read more about Monisha’s Biryani Connection"
+                    >
+                      Read More
+                    </a>
+                  </article>
+                </div>
+                <div className="swiper-slide">
+                  <article className="blog-post">
+                    <a href="https://www.shantibhavanchildren.org/blog-post/a-letter-from-the-founder_2023/">
+                      <img
+                        src="https://www.shantibhavanchildren.org/wp-content/uploads/2023/12/20230603_DrGeorgeSpeech2-810x460.png"
+                        alt=""
+                        className="tilt"
+                      />
+                    </a>
+                    <span className="meta">
+                      <span>December 14, 2023</span> |
+                      <span>Featured Posts, Newsletters</span>
+                    </span>
+                    <h3>
+                      <a href="https://www.shantibhavanchildren.org/blog-post/a-letter-from-the-founder_2023/">
+                        A Letter from the Founder
+                      </a>
+                    </h3>
+                    <p>
+                      As the year comes to a close, I wish to share the many
+                      successes Shanti Bhavan has had in 2023.
+                    </p>
+                    <a
+                      href="https://www.shantibhavanchildren.org/blog-post/a-letter-from-the-founder_2023/"
+                      className="more"
+                      aria-label="Read more about A Letter from the Founder"
+                    >
+                      Read More
+                    </a>
+                  </article>
+                </div>
+                <div className="swiper-slide">
+                  <article className="blog-post">
+                    <a href="https://www.shantibhavanchildren.org/blog-post/the-majoritys-minority/">
+                      <img
+                        src="https://www.shantibhavanchildren.org/wp-content/uploads/2023/09/pexels-thirdman-5684382-810x460.jpg"
+                        alt=""
+                        className="tilt"
+                      />
+                    </a>
+                    <span className="meta">
+                      <span>October 6, 2023</span> | <span></span>
+                    </span>
+                    <h3>
+                      <a href="https://www.shantibhavanchildren.org/blog-post/the-majoritys-minority/">
+                        The Majority’s Minority
+                      </a>
+                    </h3>
+                    <a
+                      href="https://www.shantibhavanchildren.org/blog-post/the-majoritys-minority/"
+                      className="more"
+                      aria-label="Read more about The Majority’s Minority"
+                    >
+                      Read More
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="news rounded">
+            <h2>
+              <a
+                href="https://www.shantibhavanchildren.org/press/"
+                className="link-arrow"
+              >
+                In the News
+              </a>
+            </h2>
 
-      {/* section:3 multilple picture */}
+            <article className="news-article">
+              <span className="meta">
+                <span>December 21, 2023</span> | <span>Duke Global</span>
+              </span>
+              <h3>From Shanti Bhavan to Duke</h3>
+              <a
+                href="https://global.duke.edu/from-shanti-bhavan-to-duke"
+                title="https://global.duke.edu/from-shanti-bhavan-to-duke"
+                target=""
+                className="more"
+                id=""
+              >
+                <span></span>
+              </a>
+            </article>
+            <article className="news-article">
+              <span className="meta">
+                <span>December 12, 2023</span> | <span>Forbes.com</span>
+              </span>
+              <h3>
+                The importance of long-term perspective for sustainable results
+              </h3>
+              <a
+                href="https://www.forbes.com/sites/forbesnonprofitcouncil/2023/12/11/the-importance-of-long-term-perspective-for-sustainable-results/?sh=536b204424b3"
+                title="https://www.forbes.com/sites/forbesnonprofitcouncil/2023/12/11/the-importance-of-long-term-perspective-for-sustainable-results/?sh=536b204424b3"
+                target=""
+                className="more"
+                id=""
+              >
+                <span></span>
+              </a>
+            </article>
+            <article className="news-article">
+              <span className="meta">
+                <span>October 4, 2023</span> | <span>Forbes.com</span>
+              </span>
+              <h3>
+                Creating positive systemic change through the Multiplier Effect
+              </h3>
+              <a
+                href="https://www.forbes.com/sites/forbesnonprofitcouncil/2023/10/04/creating-positive-systemic-change-through-the-multiplier-effect/?sh=4c9bda3435db"
+                title="https://www.forbes.com/sites/forbesnonprofitcouncil/2023/10/04/creating-positive-systemic-change-through-the-multiplier-effect/?sh=4c9bda3435db"
+                target=""
+                className="more"
+                id=""
+              >
+                <span></span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className="featured">
+        <div
+          className="featured-image rounded"
+          style="
+            background-image: url(images/pragati-mision-prize.jpeg);
+          "
+        ></div>
+        <div className="wrap small">
+          <div className="featured-content rounded tilt">
+            <div
+              className="featured-image-mobile"
+              style="
+                background-image: url(https://www.shantibhavanchildren.org/wp-content/uploads/2022/07/Campus-Building-1500x800.jpeg);
 
-      <Box>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={4}
-         
-          borderRadius={15}
-        >
-          <Grid item xs={4.5}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="350"
-                width="300"
-                image="/girls.jpeg" // Replace with an actual image URL
-                alt="About Image"
-                spacing="8"
+
+
+              "
+            >
+              <img
+                width="475"
+                height="407"
+                src="images/pragati mission  seminar.jpeg"
+                className="tilt img-2"
+                alt="school seminar"
+                loading="lazy"
               />
-             
-            </Card>
-          </Grid>
-
-          <Grid item xs={3.5} sx={{ marginTop: 13, borderRadius: 10 }}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="300"
-                width="300"
-                image="/chess.jpeg" // Replace with an actual image URL
-                alt="About Image"
-              />
-
-            </Card>
-          </Grid>
-
-          <Grid item xs={3.5} sx={{ marginTop: 13 }}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="300"
-                width="300"
-                image="/book.jpeg" // Replace with an actual image URL
-                alt="About Image"
-              />
-
-            </Card>
-          </Grid>
-
-         
-        </Grid>
-      </Box>
-
-
-      <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={4}
-          marginTop={0}
-          borderRadius={15}
-          sx={{ marginBottom: 0 }}
-        >
-          <Grid item xs={4.5}   sx={{ marginBottom: 0 }}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="350"
-                width="300"
-                image="/techer.jpeg" // Replace with an actual image URL
-                alt="About Image"
-                spacing="8"
-                // borderRadius={15}
-              />
-             
-            </Card>
-          </Grid>
-
-          <Grid item xs={3.5} sx={{ marginBottom: 10 }}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="300"
-                width="300"
-                image="/majrityjpeg " // Replace with an actual image URL
-                alt="About Image"
-              />
-
-            </Card>
-          </Grid>
-
-          <Grid item xs={3.5} sx={{ marginBottom: 10 }}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="300"
-                width="300"
-                image="/group.jpeg" // Replace with an actual image URL
-                alt="About Image"
-              />
-
-            </Card>
-          </Grid>
-
-         
-        </Grid>
-
-
-
-
-
-
-
-
-
-      {/* Section 2: Programs */}
-      <section style={{ padding: "50px 0", backgroundColor: "#ffffff" }}>
-        <Typography variant="h4" align="center" gutterBottom>
-          Our Programs
-        </Typography>
-
-        <Grid container spacing={4} justifyContent="center">
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="200"
-                image="/image2.jpeg" // Replace with an actual image URL
-                alt="Programs Image"
-              />
-              <CardContent>
-                <Typography variant="h6" gutterBottom>
-                  Education Initiatives
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Details about various education programs, initiatives, or
-                  courses offered by the NGO.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          {/* Add more cards or content */}
-        </Grid>
-      </section>
-
-      {/* Section 3: Get Involved */}
-      <section style={{ padding: "50px 0", backgroundColor: "#f5f5f5" }}>
-        <Typography variant="h4" align="center" gutterBottom>
-          Get Involved
-        </Typography>
-        <Grid container spacing={4} justifyContent="center">
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="200"
-                image="/classmate.jpeg" // Replace with an actual image URL
-                alt="Get Involved Image"
-              />
-              <CardContent>
-                <Typography variant="h6" gutterBottom>
-                  Volunteer Opportunities
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Information about volunteering opportunities with the NGO.
-                </Typography>
-                <Button variant="contained" color="primary" fullWidth>
-                  Get Started
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-          {/* Add more cards or content */}
-        </Grid>
-      </section>
-    </Container>
+            </div>
+            <div className="featured-text tilt-content">
+              <h2>Help Us Build Our Second School</h2>
+              <p>
+                Each year, Pragati MIssion is forced to turn away hundreds of
+                children because one school simply cannot take in all of them.
+                With your help, we will construct a second school that will
+                change the lives of hundreds of new children.
+              </p>
+              <a
+                href="https://www.shantibhavanchildren.org/shanti-bhavan-2/"
+                className="btn"
+                target=""
+              >
+                Find Out More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* <section className="gallery">
+        <div className="gallery-container flex">
+          <div className="gallery-column-1">
+            <img
+              width="475"
+              height="270"
+              src="images/pragati mission race.jpeg"
+              className="tilt img-1"
+              alt="race"
+              loading="lazy"
+            />
+            <img
+              width="475"
+              height="407"
+              src="images/pragati mission  seminar.jpeg"
+              className="tilt img-2"
+              alt="school seminar"
+              loading="lazy"
+            />
+          </div>
+          <div className="gallery-column-2">
+            <img
+              width="475"
+              height="250"
+              src="images/pragati mission  mhehndi design.jpeg"
+              className="tilt img-3"
+              alt="  mhehndi competition"
+              loading="lazy"
+            />
+            <img
+              width="475"
+              height="270"
+              src="images/pragati mission  girl  performing dance.jpeg"
+              className="tilt img-4"
+              alt="girls  performing  dance"
+              loading="lazy"
+            />
+          </div>
+          <div className="gallery-column-3">
+            <img
+              width="475"
+              height="270"
+              src="images/pragati-mission-boysgroup.jpeg"
+              className="tilt img-5"
+              alt="painting"
+              loading="lazy"
+            />
+            <img
+              width="475"
+              height="270"
+              src="images/pragati mission  girls  exam.jpeg"
+              className="tilt img-6"
+              alt="examination"
+              loading="lazy"
+            />
+          </div>
+          <div className="gallery-column-4"></div>
+        </div>
+      </section> */}
+    </>
   );
 }
