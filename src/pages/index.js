@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "../../public/images1/logo.jpg";
 
@@ -34,20 +35,20 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <section className="featured impact">
+      <section className="featured impact">
         <div
           className="featured-image rounded"
-          style="
-            background-image: url(images/pragati-mission-L1coaching.jpeg);
-          "
+          style={{
+            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-1-1500x800.png")`,
+          }}
         ></div>
         <div className="wrap medium">
           <div className="featured-content rounded tilt">
             <div
               className="featured-image-mobile"
-              style="
-                background-image: url(images/pragatimissiongirl-painting.jpeg);
-              "
+              style={{
+                backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+              }}
             ></div>
             <div className="tilt-content flex">
               <div className="impact-numbers">
@@ -95,8 +96,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
-      {/* <section className="image-text">
+      </section>
+      <section className="image-text">
         <div className="wrap flex">
           <a
             href="https://www.shantibhavanchildren.org/netflix/"
@@ -104,7 +105,7 @@ export default function Home() {
             className="image-text-image tilt"
           >
             <img
-              src="images/pragati mission playground.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-3-810x460.png"
               alt="Little girl studying at desk"
             />
           </a>
@@ -125,8 +126,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section> */}
-      {/* <section className="get-involved">
+      </section>
+      <section className="get-involved">
         <div className="wrap">
           <div className="get-involved-buckets flex">
             <a
@@ -136,9 +137,10 @@ export default function Home() {
             >
               <div
                 className="bucket-image"
-                style="
-                  background-image: url(images/pragatimissiongirl-painting.jpeg);
-                "
+                
+                style={{
+                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
+                }}
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Donate</h2>
@@ -153,9 +155,9 @@ export default function Home() {
             >
               <div
                 className="bucket-image"
-                style="
-                  background-image: url(images/pragatimission-prayers.jpeg);
-                "
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Volunteer</h2>
@@ -170,9 +172,10 @@ export default function Home() {
             >
               <div
                 className="bucket-image"
-                style="
-                  background-image: url(images/pragati-mission-girls-in-classNameroom.jpeg);
-                "
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Sponsor</h2>
@@ -181,8 +184,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section> */}
-      {/* <section className="recent-updates">
+      </section>
+      <section className="recent-updates">
         <div className="wrap flex">
           <div className="blog">
             <div className="blog-header flex">
@@ -201,6 +204,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <article className="blog-post">
                     <a href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/">
+                    
                       <img
                         src="images/pragati mission cheers group.jpeg"
                         alt=""
@@ -345,33 +349,23 @@ export default function Home() {
             </article>
           </div>
         </div>
-      </section> */}
-      {/* <section className="featured">
+      </section>
+      <section className="featured">
         <div
           className="featured-image rounded"
-          style="
-            background-image: url(images/pragati-mision-prize.jpeg);
-          "
+          style={{
+            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+          }}
         ></div>
         <div className="wrap small">
           <div className="featured-content rounded tilt">
             <div
               className="featured-image-mobile"
-              style="
-                background-image: url(https://www.shantibhavanchildren.org/wp-content/uploads/2022/07/Campus-Building-1500x800.jpeg);
-
-
-
-              "
+                           style={{
+                backgroundImage: `url("style="background-image: url(https://www.shantibhavanchildren.org/wp-content/uploads/2022/07/Campus-Building-1500x800.jpeg)"")`,
+              }}
             >
-              <img
-                width="475"
-                height="407"
-                src="images/pragati mission  seminar.jpeg"
-                className="tilt img-2"
-                alt="school seminar"
-                loading="lazy"
-              />
+
             </div>
             <div className="featured-text tilt-content">
               <h2>Help Us Build Our Second School</h2>
@@ -391,14 +385,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
-      {/* <section className="gallery">
+      </section>
+      <section className="gallery">
         <div className="gallery-container flex">
           <div className="gallery-column-1">
             <img
               width="475"
               height="270"
-              src="images/pragati mission race.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/11-475x270.png"
               className="tilt img-1"
               alt="race"
               loading="lazy"
@@ -406,7 +400,7 @@ export default function Home() {
             <img
               width="475"
               height="407"
-              src="images/pragati mission  seminar.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/7-e1663199671190-475x407.png"
               className="tilt img-2"
               alt="school seminar"
               loading="lazy"
@@ -416,7 +410,7 @@ export default function Home() {
             <img
               width="475"
               height="250"
-              src="images/pragati mission  mhehndi design.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/9-475x270.png"
               className="tilt img-3"
               alt="  mhehndi competition"
               loading="lazy"
@@ -424,7 +418,7 @@ export default function Home() {
             <img
               width="475"
               height="270"
-              src="images/pragati mission  girl  performing dance.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/8-475x270.png"
               className="tilt img-4"
               alt="girls  performing  dance"
               loading="lazy"
@@ -434,7 +428,7 @@ export default function Home() {
             <img
               width="475"
               height="270"
-              src="images/pragati-mission-boysgroup.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/6-475x270.png"
               className="tilt img-5"
               alt="painting"
               loading="lazy"
@@ -442,15 +436,22 @@ export default function Home() {
             <img
               width="475"
               height="270"
-              src="images/pragati mission  girls  exam.jpeg"
+              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/10-475x270.png"
               className="tilt img-6"
               alt="examination"
               loading="lazy"
             />
+        
+           
           </div>
           <div className="gallery-column-4"></div>
         </div>
-      </section> */}
+      </section>
+      <section className="footer">
+       
+
+
+      </section>
     </>
   );
 }
