@@ -6,11 +6,11 @@ import { Container, Typography, Grid, Link } from "@mui/material";
 const Footer = () => {
   return (
     <footer id="footer" role="contentinfo">
-      <div class="wrap">
-        <div class="footer-top flex">
-          <div class="newsletter">
-            <h2 class="title3">Stay up to date with Pragati Mission</h2>
-            <script type="text/javascript"></script>
+      <div className="wrap">
+        <div className="footer-top flex">
+          <div className="newsletter">
+            <h2 className="title3">Stay up to date with Pragati Mission</h2>
+            
             <div
               class="gf_browser_unknown gform_wrapper gravity-theme general-form_wrapper"
               id="gform_wrapper_2"
@@ -25,7 +25,9 @@ const Footer = () => {
                   &quot; indicates required fields
                 </p>
               </div>
-              <form
+
+
+              {/* <form
                 method="post"
                 enctype="multipart/form-data"
                 target="gform_ajax_frame_2"
@@ -210,15 +212,15 @@ const Footer = () => {
                     ></textarea>
                   </label>
                   <input type="hidden" id="ak_js_1" name="ak_js" value="125" />
-                  <script>
-                    document .getElementById("ak_js_1") .setAttribute("value",
-                    new Date().getTime());
-                  </script>
+                 
                 </p>
-              </form>
+              </form> */}
+
+
+
             </div>
             <iframe
-              style="display: none; width: 0px; height: 0px"
+              style={{ backgroundImage:"display: none; width: 0px; height: 0px"}}
               src="about:blank"
               name="gform_ajax_frame_2"
               id="gform_ajax_frame_2"
@@ -241,38 +243,27 @@ const Footer = () => {
                   href="https://www.facebook.com/ShantiBhavan/"
                   target="_blank"
                 >
-                  {/* <svg>
-                    <use xlink:href="https://www.shantibhavanchildren.org/wp-content/themes/jrd-shanti-bhavan/ui/svg/sprites.svg#social_facebook"></use>
-                  </svg> */}
+               
                 </a>
                 <a href="https://twitter.com/ShantiBhavan" target="_blank">
-                  {/* <svg>
-                    <use xlink:href="https://www.shantibhavanchildren.org/wp-content/themes/jrd-shanti-bhavan/ui/svg/sprites.svg#social_twitter"></use>
-                  </svg> */}
+                 
                 </a>
                 <a
                   href="https://www.youtube.com/user/ShantiBhavanSchool"
                   target="_blank"
                 >
-                  {/* <svg>
-                    <use xlink:href="https://www.shantibhavanchildren.org/wp-content/themes/jrd-shanti-bhavan/ui/svg/sprites.svg#social_youtube"></use>
-                  </svg> */}
                 </a>
                 <a
                   href="https://www.instagram.com/shanti_bhavan/"
                   target="_blank"
                 >
-                  {/* <svg>
-                    <use xlink:href="https://www.shantibhavanchildren.org/wp-content/themes/jrd-shanti-bhavan/ui/svg/sprites.svg#social_instagram"></use>
-                  </svg> */}
+                 
                 </a>
                 <a
                   href="https://www.linkedin.com/company/shanti-bhavan-children's-project/?viewAsMember=true"
                   target="_blank"
                 >
-                  {/* <svg>
-                    <use xlink:href="https://www.shantibhavanchildren.org/wp-content/themes/jrd-shanti-bhavan/ui/svg/sprites.svg#social_linkedin"></use>
-                  </svg> */}
+                
                 </a>
               </nav>
             </div>
