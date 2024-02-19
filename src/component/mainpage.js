@@ -5,7 +5,7 @@ function mainpage(props) {
     return (
        <>
        
-       <Box
+       {/* <Box
           sx={{
             height: 800,
             color: "#0b1460",
@@ -140,7 +140,7 @@ function mainpage(props) {
           </Grid>
         </Box>
     
-       
+        */}
        
        
        

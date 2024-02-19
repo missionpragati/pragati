@@ -1,7 +1,6 @@
 // components/Footer.js
 
 import React from "react";
-import { Container, Typography, Grid, Link } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -233,10 +232,10 @@ const Footer = () => {
                 href="https://www.shantibhavanchildren.org"
                 class="footer-logo"
               >
-                <img
+                {/* <img
                   src="images/pragati mission logo.jpg"
                   alt="Shanti Bhavan Children&#039;s Project"
-                />
+                /> */}
               </a>
               <nav class="social">
                 <a
@@ -271,7 +270,7 @@ const Footer = () => {
               <address>
                 <strong>United States</strong>
                 <p>
-                  Shanti Bhavan Children's Project
+                  Shanti Bhavan Childrens Project
                   <br />
                   12819 SE 38th St. #48 <br />
                   Bellevue, WA 98006, USA
@@ -303,30 +302,30 @@ const Footer = () => {
         </div>
         <div class="footer-bottom flex">
           <div class="footer-awards flex">
-            <img
+            {/* <img
               width="350"
               height="350"
               src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/07/gximage2021-350x350.png"
               class="attachment-logo size-logo"
               alt=""
               loading="lazy"
-            />
-            <img
+            /> */}
+            {/* <img
               width="300"
               height="225"
               src="https://www.shantibhavanchildren.org/wp-content/uploads/2023/10/2023-top-rated-awards-badge-embed.png"
               class="attachment-logo size-logo"
               alt=""
               loading="lazy"
-            />
-            <img
+            /> */}
+            {/* <img
               width="350"
               height="323"
               src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/06/GG-2019-staffFavorite_large-350x323.png"
               class="attachment-logo size-logo"
               alt=""
               loading="lazy"
-            />
+            /> */}
           </div>
           <div class="copyright-nav flex">
             <nav class="footer-nav">
