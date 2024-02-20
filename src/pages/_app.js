@@ -7,6 +7,7 @@ import {
   persistStore,
 } from 'redux-persist'
 import mainpage from '@/component/mainpage';
+import LayoutComming from '@/component/layoutcomming';
 
 let persistor = persistStore(store)
 
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }) {
     
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}> 
-      <Layout> <Component {...pageProps} /></Layout>
+      <LayoutComming> <Component {...pageProps} /></LayoutComming>
      </PersistGate>
     
   </Provider>)
