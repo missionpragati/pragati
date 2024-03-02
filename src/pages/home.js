@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../../public/images1/logo.jpg";
+import book from "../../public/book.jpeg";
 import Layout from "@/component/layout";
 
 export default function Home() {
@@ -8,23 +8,22 @@ export default function Home() {
     <Layout>
       <div id="banner" className="rounded">
         <div
-          className="slide"
-          style={{
-            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
-          }}
+          className="slide content_bg"
+          // style={{
+          //   backgroundImage: `url(${book})`}}
         ></div>
         <div className="wrap">
           <div className="banner-content">
             <h1>Non-Profit Education Reimagined</h1>
             <p>
-              Pragati Mission is to create a nurturing environment where
+              Mission Pragati is to create a nurturing environment where
               children can thrive emotionally,intellectually,and socially
               .Shaping the future by investing the comprenshive develpoment of
               child,empowering them to reach their full potential and contribute
               meaningfully to the world.
             </p>
             <a
-              href="https://www.shantibhavanchildren.org/get-involved/"
+              href="#"
               title="Learn How You Can Help"
               target=""
               className="btn ghost"
@@ -39,17 +38,15 @@ export default function Home() {
       <section className="featured impact">
         <div
           className="featured-image rounded"
-          style={{
-            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-1-1500x800.png")`,
-          }}
+         
         ></div>
         <div className="wrap medium">
           <div className="featured-content rounded tilt">
             <div
               className="featured-image-mobile"
-              style={{
-                backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
-              }}
+              // style={{
+              //   backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+              // }}
             ></div>
             <div className="tilt-content flex">
               <div className="impact-numbers">
@@ -89,7 +86,7 @@ export default function Home() {
                 <h2 className="title5">Impact</h2>
                 <p>
                   We measure our impact based on where our students are five
-                  years after they finish the Shanti Bhavan program. Our
+                  years after they finish the mission pragati. Our
                   graduates are authors, computer scientists, engineers,
                   entrepreneurs, teachers, and more.
                 </p>
@@ -101,12 +98,12 @@ export default function Home() {
       <section className="image-text">
         <div className="wrap flex">
           <a
-            href="https://www.shantibhavanchildren.org/netflix/"
+            href="#"
             target="_blank"
             className="image-text-image tilt"
           >
             <img
-              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-3-810x460.png"
+              src="/girls painting.jpeg"
               alt="Little girl studying at desk"
             />
           </a>
@@ -114,12 +111,12 @@ export default function Home() {
             <span className="meta">NETFLIX DOCUSERIES</span>
             <h2>Daughters of Destiny</h2>
             <p>
-              See firsthand the impact Shanti Bhavan makes on the lives of our
+              See firsthand the impact mission pragati makes on the lives of our
               children. Academy Award-winning director Vanessa Roth chronicles
               seven years in the lives of five young Shanti Bhavan women.
             </p>
             <a
-              href="https://www.shantibhavanchildren.org/netflix/"
+              href="#"
               target="_blank"
               className="btn"
             >
@@ -132,16 +129,14 @@ export default function Home() {
         <div className="wrap">
           <div className="get-involved-buckets flex">
             <a
-              href="https://www.shantibhavanchildren.org/donate/"
+              href="#"
               target=""
-              className="bucket rounded tilt"
+              className=" bucket rounded tilt"
             >
               <div
-                className="bucket-image"
+                className="chess-image"
                 
-                style={{
-                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
-                }}
+                
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Donate</h2>
@@ -150,15 +145,13 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/volunteer/"
+              href="#/"
               target=""
               className="bucket rounded tilt"
             >
               <div
-                className="bucket-image"
-                style={{
-                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
-                }}
+                className="students-reading-book-image"
+             
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Volunteer</h2>
@@ -167,20 +160,18 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/sponsorship/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
               <div
-                className="bucket-image"
-                style={{
-                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
-                }}
+                className="mehndi-image"
+               
 
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Sponsor</h2>
-                <p>Create a connection with a Pragati Mission.</p>
+                <p>Create a connection with a  Mission Pragati.</p>
               </div>
             </a>
           </div>
@@ -192,7 +183,7 @@ export default function Home() {
             <div className="blog-header flex">
               <h2>
                 <a
-                  href="https://www.shantibhavanchildren.org/blog/"
+                  href="#"
                   className="link-arrow"
                 >
                   From the Blog
@@ -204,7 +195,7 @@ export default function Home() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <article className="blog-post">
-                    <a href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/">
+                    <a href="#">
                     
                       <img
                         src="images/pragati mission cheers group.jpeg"
