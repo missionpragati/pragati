@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Router from "next/router";
 // import logo from "../../public/images1/logo.jpg";
 import styles from "../styles/Home.module.css"
 
@@ -22,9 +23,10 @@ const Header = () => {
       </a> */}
       <div className="wrap flex">
         <div >
-          
+         
           <Image src="/logo.png" height={70} width={70} style={{height:70, width:70, borderRadius:35}}/>
         </div>
+
 
         <nav>
           {/* <ul id="utility-nav" className="">
@@ -48,20 +50,21 @@ const Header = () => {
               id="menu-item-443"
               className="menu-item menu-item-type-custom menu-item-object-custom menu-item-443"
             >
-              <a href="#">Home</a>
+              <a onClick={() => Router.push("/")}>Home</a>
             </li>
+
 
             <li
               id="menu-item-81"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"
             >
-              <a href="#">Blog</a>
+              <a onClick={() => Router.push("blog")}>Blog</a>
             </li>
             <li
               id="menu-item-445"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"
             >
-              <a href="https://www.shantibhavanchildren.org/contact/">
+              <a onClick={() => Router.push("contactus")}>
                 Contact
               </a>
             </li>
@@ -69,7 +72,7 @@ const Header = () => {
               id="menu-item-446"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"
             >
-              <a href="#">About</a>
+              <a o onClick={() => Router.push("aboutus")}>About</a>
             </li>
           </ul>
         </nav>
@@ -288,4 +291,8 @@ const Header = () => {
   );
 };
 
+
 export default Header;
+
+
+
