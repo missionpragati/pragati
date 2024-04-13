@@ -1,4 +1,7 @@
-
-.main{
-  background-color: #5198bc;
+.logo{
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
 }

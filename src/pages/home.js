@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../../public/images1/logo.jpg";
+// import logo from "../../public/images1/logo.jpg";
 import Layout from "@/component/layout";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
         <div
           className="slide"
           style={{
-            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+            backgroundImage: `url("/education.jpeg")`,
           }}
         ></div>
         <div className="wrap">
@@ -24,17 +24,48 @@ export default function Home() {
               meaningfully to the world.
             </p>
             <a
-              href="https://www.shantibhavanchildren.org/get-involved/"
+              href="#"
               title="Learn How You Can Help"
               target=""
               className="btn ghost"
               id=""
             >
-              {/* <span>Learn How You Can Help</span> */}
+              <span>Learn How You Can Help</span>
             </a>
           </div>
         </div>
       </div>
+      <section className="image-text">
+        <div className="wrap flex reverse">
+          <a
+            href="https://www.shantibhavanchildren.org/field-manager-job/"
+            target=""
+            className="image-text-image tilte"
+            // style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg);"
+          >
+            <img
+              src="/image1.jpeg"
+              alt="Volunteer Sophy"
+            />
+          </a>
+          <div className="image-text-content">
+            <span className="meta">Join Our Team</span>
+            <h2>Field Manager</h2>
+            <p>
+              Are you seeking a unique opportunity to immerse yourself in a
+              close-knit community and make a difference in young peoples
+              lives? Maybe youre our next Field Manager!
+            </p>
+            <a
+              href="https://www.shantibhavanchildren.org/field-manager-job/"
+              target=""
+              className="btn "
+            >
+              Field Manager
+            </a>{" "}
+          </div>
+        </div>
+      </section>
 
       <section className="featured impact">
         <div
@@ -138,7 +169,6 @@ export default function Home() {
             >
               <div
                 className="bucket-image"
-                
                 style={{
                   backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
                 }}
@@ -176,7 +206,6 @@ export default function Home() {
                 style={{
                   backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
                 }}
-
               ></div>
               <div className="bucket-text">
                 <h2 className="title3 link-arrow">Sponsor</h2>
@@ -205,7 +234,6 @@ export default function Home() {
                 <div className="swiper-slide">
                   <article className="blog-post">
                     <a href="https://www.shantibhavanchildren.org/blog-post/monishas-biryani-connection/">
-                    
                       <img
                         src="images/pragati mission cheers group.jpeg"
                         alt=""
@@ -362,12 +390,10 @@ export default function Home() {
           <div className="featured-content rounded tilt">
             <div
               className="featured-image-mobile"
-                           style={{
+              style={{
                 backgroundImage: `url("style="background-image: url(https://www.shantibhavanchildren.org/wp-content/uploads/2022/07/Campus-Building-1500x800.jpeg)"")`,
               }}
-            >
-
-            </div>
+            ></div>
             <div className="featured-text tilt-content">
               <h2>Help Us Build Our Second School</h2>
               <p>
@@ -442,17 +468,11 @@ export default function Home() {
               alt="examination"
               loading="lazy"
             />
-        
-           
           </div>
           <div className="gallery-column-4"></div>
         </div>
       </section>
-      <section className="footer">
-       
-
-
-      </section>
-      </Layout>
+      <section className="footer"></section>
+    </Layout>
   );
 }

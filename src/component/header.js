@@ -1,5 +1,6 @@
 import Image from "next/image";
-import logo from "../../public/images1/logo.jpg";
+// import logo from "../../public/images1/logo.jpg";
+import styles from "../styles/Home.module.css"
 
 const Header = () => {
   return (
@@ -20,15 +21,11 @@ const Header = () => {
         Skip to Main Content
       </a> */}
       <div className="wrap flex">
-        <a href="#" id="logo">
-          <Image
-            src="/images1/logo.jpg"
-            alt="Mission Pragati"
-            // style="height: 4rem;"
-            height={10}
-            width={90}
-          />
-        </a>
+        <div >
+          
+          <Image src="/logo.png" height={70} width={70} style={{height:70, width:70, borderRadius:35}}/>
+        </div>
+
         <nav>
           {/* <ul id="utility-nav" className="">
             <li
@@ -47,20 +44,18 @@ const Header = () => {
             </li>
           </ul> */}
           <ul id="main-nav" className="">
-            
             <li
               id="menu-item-443"
               className="menu-item menu-item-type-custom menu-item-object-custom menu-item-443"
             >
-              <a href="https://www.shantibhavanchildren.org/impact/">Home</a>
+              <a href="#">Home</a>
             </li>
-           
-            
+
             <li
               id="menu-item-81"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"
             >
-              <a href="https://www.shantibhavanchildren.org/blog/">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li
               id="menu-item-445"
@@ -74,7 +69,7 @@ const Header = () => {
               id="menu-item-446"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"
             >
-              <a href="https://www.shantibhavanchildren.org/about-us/">About</a>
+              <a href="#">About</a>
             </li>
           </ul>
         </nav>
