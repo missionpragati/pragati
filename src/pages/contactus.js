@@ -17,7 +17,7 @@ export default function contactus() {
               <address>
                 <h3 class="title5">United States</h3>
                 <p>
-                  Shanti Bhavan Children's Project
+                  Shanti Bhavan Childrens Project
                   <br />
                   12819 SE 38th St. #48 <br />
                   Bellevue, WA 98006, USA
@@ -27,7 +27,7 @@ export default function contactus() {
                       class="__cf_email__"
                       data-cfemail="3e575058517e4d565f504a575c565f485f505d5657525a4c5b5010514c59"
                     >
-                      [email&#160;protected]
+                      {/* [email&#160;protected] */}
                     </span>
                   </a>
                 </p>{" "}

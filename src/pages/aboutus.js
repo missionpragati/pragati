@@ -27,7 +27,7 @@ export default function Aboutus() {
               <h2>Shanti Bhavan Redefines Nonprofit Education</h2>
               <p>
                 By providing 17 years of educational intervention, Shanti
-                Bhavan's approach is long-term and unprecedented. From their
+                Bhavans approach is long-term and unprecedented. From their
                 first day of school to their first day of work, and even beyond,
                 Shanti Bhavan supports its children in every facet of their
                 lives.{" "}
