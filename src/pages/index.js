@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
+
+import Image from "next/image";
 // import logo from "../../public/images1/logo.jpg";
 import Layout from "@/component/layout";
 
@@ -38,30 +39,27 @@ export default function Home() {
       <section className="image-text">
         <div className="wrap flex reverse">
           <a
-            href="https://www.shantibhavanchildren.org/field-manager-job/"
+            href="#"
             target=""
             className="image-text-image tilte"
             // style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg);"
           >
-            <img
-              src="/image1.jpeg"
-              alt="Volunteer Sophy"
-            />
+            <img src="/image1.jpeg" alt="Volunteer Sophy" />
           </a>
           <div className="image-text-content">
-            <span className="meta">Join Our Team</span>
-            <h2>Field Manager</h2>
+            <span className="meta">Join Pragati</span>
+            <h2>Our Mission</h2>
             <p>
-              Are you seeking a unique opportunity to immerse yourself in a
-              close-knit community and make a difference in young peoples
-              lives? Maybe youre our next Field Manager!
+              Join Pragati Mission and become a catalyst for change in
+              education. Together, we can empower underprivileged communities
+              through quality learning opportunities. Your contribution will
+              shape brighter futures and break the cycle of poverty. Join our
+              passionate team and make a tangible difference in the lives of
+              countless children. Lets pave the way for a more equitable and
+              educated society, one step at a time.
             </p>
-            <a
-              href="https://www.shantibhavanchildren.org/field-manager-job/"
-              target=""
-              className="btn "
-            >
-              Field Manager
+            <a href="#" target="" className="btn ">
+              Pragati Pioneers
             </a>{" "}
           </div>
         </div>
@@ -71,28 +69,23 @@ export default function Home() {
         <div
           className="featured-image rounded"
           style={{
-            backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-1-1500x800.png")`,
+            backgroundImage: `url("/secondBanner.jpeg")`,
           }}
         ></div>
         <div className="wrap medium">
           <div className="featured-content rounded tilt">
-            <div
-              className="featured-image-mobile"
-              style={{
-                backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
-              }}
-            ></div>
+            
             <div className="tilt-content flex">
               <div className="impact-numbers">
-                <div className="impact-numbers-timer">
+                {/* <div className="impact-numbers-timer">
                   <div className="timer-bar"></div>
-                </div>
+                </div> */}
                 <div className="impact-numbers-slider">
-                  <div className="slide">
-                    <strong>97%</strong>
+                  <div className="s" style={{color:"white"}}>
+                    <strong style={{color:"white", fontSize:70}}>97%</strong>
                     <p>Students who graduate from high school</p>
                   </div>
-                  <div className="slide">
+                  {/* <div className="slide">
                     <strong>98%</strong>
                     <p>Students who complete college/university degrees</p>
                   </div>
@@ -113,16 +106,13 @@ export default function Home() {
                       Graduates give back 20-60% of their salaries to their
                       families and communities
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="featured-text">
                 <h2 className="title5">Impact</h2>
                 <p>
-                  We measure our impact based on where our students are five
-                  years after they finish the Shanti Bhavan program. Our
-                  graduates are authors, computer scientists, engineers,
-                  entrepreneurs, teachers, and more.
+                How about calling them Pragati Pathfinders ? It emphasizes their role in guiding and supporting students on their journey towards success, mirroring the mission s focus on empowerment and progress.
                 </p>
               </div>
             </div>
@@ -132,25 +122,24 @@ export default function Home() {
       <section className="image-text">
         <div className="wrap flex">
           <a
-            href="https://www.shantibhavanchildren.org/netflix/"
+            href="https://www.youtube.com/watch?v=zUSe72ZAynE"
             target="_blank"
             className="image-text-image tilt"
           >
             <img
-              src="https://www.shantibhavanchildren.org/wp-content/uploads/2022/09/Then-Netflix-3-810x460.png"
+              src="/successs.jpeg"
               alt="Little girl studying at desk"
             />
+           
           </a>
           <div className="image-text-content">
-            <span className="meta">NETFLIX DOCUSERIES</span>
-            <h2>Daughters of Destiny</h2>
+            <span className="meta">REAL MEANING</span>
+            <h2>MEANING OF SUCCESS</h2>
             <p>
-              See firsthand the impact Shanti Bhavan makes on the lives of our
-              children. Academy Award-winning director Vanessa Roth chronicles
-              seven years in the lives of five young Shanti Bhavan women.
+            Real Meaning of Success could embody the idea that success isn t just about individual achievements, but about the positive impact one makes on others lives. It could mean helping underprivileged students overcome obstacles, gain access to education, and ultimately, become empowered individuals who contribute positively to society. Success, in this sense, is measured not only by personal accomplishments but by the transformation and upliftment of entire communities
             </p>
             <a
-              href="https://www.shantibhavanchildren.org/netflix/"
+              href="#"
               target="_blank"
               className="btn"
             >
@@ -163,14 +152,14 @@ export default function Home() {
         <div className="wrap">
           <div className="get-involved-buckets flex">
             <a
-              href="https://www.shantibhavanchildren.org/donate/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
+                  backgroundImage: `url("book.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
@@ -180,14 +169,14 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/volunteer/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                  backgroundImage: `url("teamL1.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
@@ -197,14 +186,14 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/sponsorship/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                  backgroundImage: `url("image3.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
@@ -215,7 +204,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="recent-updates">
+      {/* <section className="recent-updates">
         <div className="wrap flex">
           <div className="blog">
             <div className="blog-header flex">
@@ -378,7 +367,7 @@ export default function Home() {
             </article>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="featured">
         <div
           className="featured-image rounded"

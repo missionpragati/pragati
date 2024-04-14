@@ -58,13 +58,17 @@ const Header = () => {
               id="menu-item-81"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"
             >
-              <a onClick={() => Router.push("blog")}>Blog</a>
+              {/* <a onClick={() => Router.push("blog")}>Blog</a> */}
+              <a >Blog</a>
             </li>
             <li
               id="menu-item-445"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"
             >
-              <a onClick={() => Router.push("contactus")}>
+              {/* <a onClick={() => Router.push("contactus")}>
+                Contact
+              </a> */}
+              <a >
                 Contact
               </a>
             </li>
@@ -72,7 +76,8 @@ const Header = () => {
               id="menu-item-446"
               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-446"
             >
-              <a o onClick={() => Router.push("aboutus")}>About</a>
+              {/* <a  onClick={() => Router.push("aboutus")}>About</a> */}
+              <a  >About</a>
             </li>
           </ul>
         </nav>

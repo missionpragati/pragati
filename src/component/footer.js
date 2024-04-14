@@ -270,33 +270,18 @@ const Footer = () => {
               <address>
                 <strong>United States</strong>
                 <p>
-                  Shanti Bhavan Childrens Project
+                Chitrakut Apartment
                   <br />
-                  12819 SE 38th St. #48 <br />
-                  Bellevue, WA 98006, USA
+                  Durgakund ,Varanasi <br />
+                  UP-221005
                   <br />
-                  <a href="/cdn-cgi/l/email-protection#8be2e5ede4cbf8e3eae5ffe2e9e3eafdeae5e8e3e2e7eff9eee5a5e4f9ec">
-                    <span
-                      class="__cf_email__"
-                      data-cfemail="c0a9aea6af80b3a8a1aeb4a9a2a8a1b6a1aea3a8a9aca4b2a5aeeeafb2a7"
-                    >
-                      [email&#160;protected]
-                    </span>
+                  India
+                  <a href="">
+                    
                   </a>
                 </p>
               </address>
-              <address>
-                <strong>India</strong>
-                <p>
-                  Shanti Bhavan Educational Trust – HO
-                  <br />
-                  # 406, 6th B Main Road
-                  <br />
-                  2nd Block; HRBR layout
-                  <br />
-                  Bangalore – 560 043
-                </p>
-              </address>
+              
             </div>
           </div>
         </div>
@@ -336,7 +321,7 @@ const Footer = () => {
                 >
                   <a
                     rel="privacy-policy"
-                    href="https://www.shantibhavanchildren.org/privacy-policy/"
+                    href="#"
                   >
                     Terms and Privacy
                   </a>
@@ -344,10 +329,10 @@ const Footer = () => {
               </ul>
             </nav>
             <div class="copyright">
-              <span>&copy; 2024 Shanti Bhavan Children&#039;s Project</span>
+              <span>&copy; 2024 Pragati Mission&#039;s Project</span>
               <span class="jackrabbit">
                 <a
-                  href="https://www.jumpingjackrabbit.com"
+                  href="#"
                   title="Website Design by Jackrabbit"
                   target="_blank"
                 >
@@ -355,11 +340,11 @@ const Footer = () => {
                 </a>
                 by
                 <a
-                  href="https://www.jumpingjackrabbit.com"
+                  href="h#"
                   title="Website Design by Jackrabbit"
                   target="_blank"
                 >
-                  Jackrabbit
+                  Akash Kashyap
                 </a>
               </span>
             </div>
