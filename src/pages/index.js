@@ -163,7 +163,7 @@ export default function Home() {
         <div className="wrap">
           <div className="get-involved-buckets flex">
             <a
-              href="https://www.shantibhavanchildren.org/donate/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
@@ -180,7 +180,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/volunteer/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
@@ -410,6 +410,119 @@ export default function Home() {
                 Find Out More
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <h1>Our Team</h1>
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Donate</h2>
+                <p>Mission Pragati</p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Volunteer</h2>
+                <p>Experience Pragati Mission for yourself.</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Sponsor</h2>
+                <p>Create a connection with a Pragati Mission.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Donate</h2>
+                <p>Mission Pragati</p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Volunteer</h2>
+                <p>Experience Pragati Mission for yourself.</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Sponsor</h2>
+                <p>Create a connection with a Pragati Mission.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
