@@ -163,7 +163,7 @@ export default function Home() {
         <div className="wrap">
           <div className="get-involved-buckets flex">
             <a
-              href="https://www.shantibhavanchildren.org/donate/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
@@ -180,14 +180,14 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.shantibhavanchildren.org/volunteer/"
+              href="#"
               target=""
               className="bucket rounded tilt"
             >
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                  backgroundImage: `url("/education.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
@@ -410,6 +410,201 @@ export default function Home() {
                 Find Out More
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <h1>Our Team</h1>
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_021.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Brijesh Singh (Mentor)</h2>
+                <p>Hey, I am Brijesh Singh and i mentoring pragati foundation since 2 
+years. "mission PRAGATI" NGO is really doing great job in the field 
+of education. I to believe that Without education, people cannot 
+progress in society or make changes to their lifestyles. 
+I really feel proud to stand by as a Mentor in pragati NGO. </p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_022.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Abhijeet Pandey (President)</h2>
+                <p>Hi, I am Abhijeet pandey working as a president in "mission 
+PRAGATI" NGO We are here to build educational infrastructure and 
+quality education & Skills. </p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_023.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Nutam ( Vise President)</h2>
+                <p>Hi, am Nutan Bind working as Vice president in •mission PRAGATI• 
+NGO. I am here to empower girls. as do believe girls education 
+strengthen economies and reduces inequality in society. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_024.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Afreen Shekh (Team Member)</h2>
+                <p>MHi My name is afreen shekh am working here as a team member. 
+I have learnt a lot by being associated With pragati.l love helping 
+others. That's why I joined Pragati and I am learning a lot from 
+Pragati and going forward, I want to do a lot more from my side. </p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_025.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Ashutosh Dwivedi (President)</h2>
+                <p>Hi, I am Ashutosh Dwivedi. In 2018 i had started "mission PRAGATI" NGO 
+with vision to provide quality education which could help students 
+develop skills like work values, productivity and self-reliance. 
+had created a core team who are experts in their educational fields ie 
+ISRO Scientist, IAS, IITIANS, Teachers, Artist, Dancers and Engineers as a 
+committee member of this association. </p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_026.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Om Jayanti (Team Member)</h2>
+                <p>Hey i am 0m jayanti & i would describe myself as a cohesive team 
+member: I am willing and able to do whatever task is necessary to 
+complete the project. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_027.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Ashvini Singh (Sports Head)</h2>
+                <p>Hi i am Ashvini Singh and i working as a sports head in mission 
+pragati .Being an athlete taught me about hard work and dedication. I've 
+learned that to be good at what you do, you cant just sit around and 
+expect things to always go your way. I did put in extra work to make the 
+team and find out the talented students </p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_028.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Yash Raj (Graphic Design)</h2>
+                <p>Hii am Yash Raj and i m working here as a graphic designer .'m a creative 
+person driven by my passion for design. rm proficient with graphic tools 
+and have an artistic approach towards everything I create. I'm also a 
+team player of mission PRAGATI. </p>
+              </div>
+            </a>
+
+            {/* <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Sponsor</h2>
+                <p>Create a connection with a Pragati Mission.</p>
+              </div>
+            </a> */}
           </div>
         </div>
       </section>
