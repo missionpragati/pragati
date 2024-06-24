@@ -425,16 +425,12 @@ export default function Home() {
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("Team/image_021.jpeg")`,
+                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
-                <h2 className="title3 link-arrow">Brijesh Singh (Mentor)</h2>
-                <p>Hey, I am Brijesh Singh and i mentoring pragati foundation since 2 
-years. "mission PRAGATI" NGO is really doing great job in the field 
-of education. I to believe that Without education, people cannot 
-progress in society or make changes to their lifestyles. 
-I really feel proud to stand by as a Mentor in pragati NGO. </p>
+                <h2 className="title3 link-arrow">Donate</h2>
+                <p>Mission Pragati</p>
               </div>
             </a>
 
@@ -446,14 +442,12 @@ I really feel proud to stand by as a Mentor in pragati NGO. </p>
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("Team/image_022.jpeg")`,
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
-                <h2 className="title3 link-arrow">Abhijeet Pandey (President)</h2>
-                <p>Hi, I am Abhijeet pandey working as a president in "mission 
-PRAGATI" NGO We are here to build educational infrastructure and 
-quality education & Skills. </p>
+                <h2 className="title3 link-arrow">Volunteer</h2>
+                <p>Experience Pragati Mission for yourself.</p>
               </div>
             </a>
 
@@ -469,10 +463,8 @@ quality education & Skills. </p>
                 }}
               ></div>
               <div className="bucket-text">
-                <h2 className="title3 link-arrow">Nutam ( Vise President)</h2>
-                <p>Hi, am Nutan Bind working as Vice president in •mission PRAGATI• 
-NGO. I am here to empower girls. as do believe girls education 
-strengthen economies and reduces inequality in society. </p>
+                <h2 className="title3 link-arrow">Sponsor</h2>
+                <p>Create a connection with a Pragati Mission.</p>
               </div>
             </a>
           </div>
@@ -489,15 +481,12 @@ strengthen economies and reduces inequality in society. </p>
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("Team/image_024.jpeg")`,
+                  backgroundImage: `url("pragatimissiongirl-painting.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
-                <h2 className="title3 link-arrow">Afreen Shekh (Team Member)</h2>
-                <p>MHi My name is afreen shekh am working here as a team member. 
-I have learnt a lot by being associated With pragati.l love helping 
-others. That's why I joined Pragati and I am learning a lot from 
-Pragati and going forward, I want to do a lot more from my side. </p>
+                <h2 className="title3 link-arrow">Donate</h2>
+                <p>Mission Pragati</p>
               </div>
             </a>
 
@@ -509,17 +498,12 @@ Pragati and going forward, I want to do a lot more from my side. </p>
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("Team/image_025.jpeg")`,
+                  backgroundImage: `url("https://www.shantibhavanchildren.org/wp-content/uploads/2022/08/student-learning-1500x800.jpeg")`,
                 }}
               ></div>
               <div className="bucket-text">
-                <h2 className="title3 link-arrow">Ashutosh Dwivedi (President)</h2>
-                <p>Hi, I am Ashutosh Dwivedi. In 2018 i had started "mission PRAGATI" NGO 
-with vision to provide quality education which could help students 
-develop skills like work values, productivity and self-reliance. 
-had created a core team who are experts in their educational fields ie 
-ISRO Scientist, IAS, IITIANS, Teachers, Artist, Dancers and Engineers as a 
-committee member of this association. </p>
+                <h2 className="title3 link-arrow">Volunteer</h2>
+                <p>Experience Pragati Mission for yourself.</p>
               </div>
             </a>
 
