@@ -425,27 +425,6 @@ export default function Home() {
               <div
                 className="bucket-image"
                 style={{
-                  backgroundImage: `url("Team/image_021.jpeg")`,
-                }}
-              ></div>
-              <div className="bucket-text">
-                <h2 className="title3 link-arrow">Brijesh Singh (Mentor)</h2>
-                <p>Hey, I am Brijesh Singh and i mentoring pragati foundation since 2 
-years. "mission PRAGATI" NGO is really doing great job in the field 
-of education. I to believe that Without education, people cannot 
-progress in society or make changes to their lifestyles. 
-I really feel proud to stand by as a Mentor in pragati NGO. </p>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              target=""
-              className="bucket rounded tilt"
-            >
-              <div
-                className="bucket-image"
-                style={{
                   backgroundImage: `url("Team/image_022.jpeg")`,
                 }}
               ></div>
@@ -453,51 +432,7 @@ I really feel proud to stand by as a Mentor in pragati NGO. </p>
                 <h2 className="title3 link-arrow">Abhijeet Pandey (President)</h2>
                 <p>Hi, I am Abhijeet pandey working as a president in "mission 
 PRAGATI" NGO We are here to build educational infrastructure and 
-quality education & Skills. </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.shantibhavanchildren.org/sponsorship/"
-              target=""
-              className="bucket rounded tilt"
-            >
-              <div
-                className="bucket-image"
-                style={{
-                  backgroundImage: `url("Team/image_023.jpeg")`,
-                }}
-              ></div>
-              <div className="bucket-text">
-                <h2 className="title3 link-arrow">Nutam ( Vise President)</h2>
-                <p>Hi, am Nutan Bind working as Vice president in •mission PRAGATI• 
-NGO. I am here to empower girls. as do believe girls education 
-strengthen economies and reduces inequality in society. </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section className="get-involved">
-        <div className="wrap">
-          <div className="get-involved-buckets flex">
-            <a
-              href="#"
-              target=""
-              className="bucket rounded tilt"
-            >
-              <div
-                className="bucket-image"
-                style={{
-                  backgroundImage: `url("Team/image_024.jpeg")`,
-                }}
-              ></div>
-              <div className="bucket-text">
-                <h2 className="title3 link-arrow">Afreen Shekh (Team Member)</h2>
-                <p>MHi My name is afreen shekh am working here as a team member. 
-I have learnt a lot by being associated With pragati.l love helping 
-others. That's why I joined Pragati and I am learning a lot from 
-Pragati and going forward, I want to do a lot more from my side. </p>
+quality education & Skills.</p>
               </div>
             </a>
 
@@ -519,7 +454,73 @@ with vision to provide quality education which could help students
 develop skills like work values, productivity and self-reliance. 
 had created a core team who are experts in their educational fields ie 
 ISRO Scientist, IAS, IITIANS, Teachers, Artist, Dancers and Engineers as a 
-committee member of this association. </p>
+committee member of this association. 
+                  </p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.shantibhavanchildren.org/sponsorship/"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_023.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Nutam ( Vise President)</h2>
+                <p>Hi, am Nutan Bind working as Vice president in •mission PRAGATI• 
+NGO. I am here to empower girls. as do believe girls education 
+strengthen economies and reduces inequality in society.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="get-involved">
+        <div className="wrap">
+          <div className="get-involved-buckets flex">
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_021.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Brijesh Singh (Mentor)</h2>
+                <p>Hey, I am Brijesh Singh and i mentoring pragati foundation since 2 
+years. "mission PRAGATI" NGO is really doing great job in the field 
+of education. I to believe that Without education, people cannot 
+progress in society or make changes to their lifestyles. 
+I really feel proud to stand by as a Mentor in pragati NGO.</p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              target=""
+              className="bucket rounded tilt"
+            >
+              <div
+                className="bucket-image"
+                style={{
+                  backgroundImage: `url("Team/image_024.jpeg")`,
+                }}
+              ></div>
+              <div className="bucket-text">
+                <h2 className="title3 link-arrow">Afreen Shekh (Team Member)</h2>
+                <p>Hi My name is afreen shekh am working here as a team member. 
+I have learnt a lot by being associated With pragati.l love helping 
+others. That's why I joined Pragati and I am learning a lot from 
+Pragati and going forward, I want to do a lot more from my side.</p>
               </div>
             </a>
 
